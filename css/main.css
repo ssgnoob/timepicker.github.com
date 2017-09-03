@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.top{
+   height: 250px;
+}
+.main{
+    margin-top: 50px;
+    height: auto;
+}
+.showtime{
+    list-style: none;
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+    position: relative;
+ /*   overflow: hidden;
+    transform: rotateX(0deg);*/
+ /*   transform-style:preserve-3d;*/
+ /*   animation: move 1s linear 1;
+    animation-fill-mode: forwards;*/
+  /*  transition: transform 1s linear;*/
+}
+/*ul:hover{
+    transform: rotateX(90deg);
+}*/
+@keyframes move {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(90deg);
+    }
+
+}
+.showtime li{
+    width: 100px;
+    float:left;
+    margin: 0 5px;
+    transition: all 0.5s linear;
+}
+.st{
+    box-sizing: border-box;
+    width: 100px;
+    line-height: 120px;
+    border: 1px solid white;
+    text-align: center;
+    float:left;
+
+    font-size: 100px;
+    background-color:white;
+    color:black;
+   border-radius: 10px;
+
+}
+.st2{
+    box-sizing: border-box;
+    width: 100px;
+    height: 60px;
+    border: 1px solid transparent;
+    border-bottom: 0px;
+    margin-top: 130px;
+    background:linear-gradient(to bottom,#fff,#000);
+    border-radius: 10px;
+}
+.showtime li:nth-child(3){
+    width: 70px;
+}
+.showtime li:nth-child(3) .st{
+    font-size: 70px;
+    width: 70px;
+}
+.showtime li:nth-child(3) .st2{
+    width: 70px;
+}
+
+.settime{
+    margin-left: 200px;
+    float: left;
+    overflow: hidden;
+    height: 250px;
+   /*background-image: linear-gradient(to bottom,#000 0%,#fff 50%,#000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent*/;
+}
+.settime .set0{
+    float: left;
+    margin: 0 10px;
+    color: white;
+    line-height: 250px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold
+}
+.settime ul{
+     transition: transform 200ms linear;
+    transform: translateY(0px);
+    /*display: inline-block;*/
+    float: left;
+    width: 50px;
+    margin: 0 10px;
+    list-style: none;
+}
+.settime li{
+    width: 50px;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    opacity: 0.2;
+}
+.settime .show{
+    opacity: 1;
+}
+.settime .near{
+    opacity: 0.6;
+}
+.setbreak{
+    margin-left: 200px;
+    float: left;
+    overflow: hidden;
+    height: 250px;
+    /*background-image: linear-gradient(to bottom,#000 0%,#fff 50%,#000 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent*/;
+}
+.setbreak .setb0{
+    float: left;
+    margin: 0 10px;
+    color: white;
+    line-height: 250px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold
+}
+.setbreak ul{
+    transition: transform 200ms linear;
+    transform: translateY(0px);
+    /*display: inline-block;*/
+    float: left;
+    width: 50px;
+    margin: 0 10px;
+    list-style: none;
+}
+.setbreak li{
+    width: 50px;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    opacity: 0.2;
+}
+.setbreak .show{
+    opacity: 1;
+}
+.setbreak .near{
+    opacity: 0.6;
+}
+.btn{
+    float: left;
+    margin-left: 200px;
+    line-height: 250px;
+}
+.btn .control{
+    width: 100px;
+    border: 1px solid transparent;
+    height: 100px;
+   /* border-radius: 10px;*/
+    background: black;
+    color: white;
+    font-size: 28px;
+    outline: none;
+}
+.btn .control:hover{
+    cursor: pointer;
+}
+.title{
+    color: white;
+    text-indent: 40%;
+    margin-top: 50px;
+    text-shadow: 2px 2px 2px #999;
+    font-size: 50px;
+}
